@@ -325,8 +325,7 @@ box-shadow: 0px 0px 5px 2px #FFFF00;
 /* a:active,a:visited, a#active {color:#a017a0;}  */
 
 img, video, iframe {
-object-fit: cover;
-
+max-width: 100%;
 }
 
 @media print {
