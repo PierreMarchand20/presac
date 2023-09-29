@@ -321,6 +321,30 @@ margin-right: 40px; */
   text-align: left;
 }
 
+.right-column-two-third {
+  width: 60%;
+  float: right;
+  padding-top: 0em;
+  margin-top: 0em;
+  text-align: left;
+}
+
+.center-column-two-third {
+  width: 60%;
+  float: none;
+  padding-top: 0em;
+  margin-top: 0em;
+  text-align: left;
+}
+
+.left-column-two-third {
+  width: 60%;
+  float: left;
+  padding-top: 0em;
+  margin-top: 0em;
+  text-align: left;
+}
+
 .left-column-half {
   width: 48%;
   float: left;
