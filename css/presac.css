@@ -1,0 +1,280 @@
+/**
+ * @theme presac
+ */
+
+@import 'gaia';
+
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,700,700i);
+@import url(https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css);
+
+:root {
+    --color-background: #fff;
+    --color-foreground: #333;
+    --color-highlight: #800000;
+    font-family: 'Fira Sans', 'Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+code {
+    font-family: 'Fira Code', 'Lucida Console', Monaco, monospace;
+    font-size: 80%;
+    background: #e7e8e2;
+    border-radius: 3px;
+    padding: 4px;
+    color: var(--color-foreground)
+}
+
+pre {
+    background: #e7e8e2;
+    overflow: scroll;
+}
+
+pre>code {
+    font-size: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 100%;
+    font-size: 100%;
+}
+
+
+header {
+    background-color: #23373B;
+    font-size: 45px;
+    color: #FAFAFA;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    font-weight: normal;
+}
+
+section.title h1 {
+    color: #23373b;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 1;
+    text-align: left;
+    text-shadow: none;
+    padding-bottom: 18px;
+    padding-top: 20%;
+    margin-bottom: 18px;
+}
+
+section.title h2 {
+    font-size: 28px;
+    font-weight: normal;
+    color: #AAA59F;
+    text-align: left;
+    text-shadow: none;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+section.title h3 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #AAA59F;
+    text-align: left;
+    text-shadow: none;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1;
+}
+
+section.title-slide h1 {
+    color: #23373b;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 1;
+    text-align: left;
+    text-shadow: none;
+    padding-bottom: 18px;
+    padding-top: 20%;
+    margin-bottom: 18px;
+}
+
+section h1 {
+    font-weight: normal;
+    font-size: 45px;
+}
+
+
+section::after {
+    font-weight: 700;
+    content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+}
+
+a {
+    font-family: 'Fira Code', 'Lucida Console', Monaco, monospace;
+    color: #d61f62;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    background-color: #FFFF00;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px #FFFF00;
+}
+
+
+table {
+    margin-bottom: 0px;
+    width: 100%;
+    max-width: 100%;
+    border-spacing: 0;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-radius: 0px;
+    text-align: left;
+}
+
+table td,
+table th,
+table thead,
+table thead th,
+table tr {
+    border-width: 0px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.12);
+    background-color: transparent;
+}
+
+table td,
+table tr {
+    border-width: 0px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.12);
+    background-color: transparent;
+    text-align: center;
+}
+
+table td:first-child,
+table th:first-child {
+    text-align: left;
+}
+
+table thead th {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/*!
+  Theme: Default
+  Description: Original highlight.js style
+  Author: (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
+  Maintainer: @highlightjs/core-team
+  Website: https://highlightjs.org/
+  License: see project LICENSE
+  Touched: 2021
+*/
+
+/* Base color: saturation 0; */
+
+.hljs-subst {
+    /* default */
+}
+
+/* purposely ignored */
+.hljs-formula,
+.hljs-attr,
+.hljs-property,
+.hljs-params {}
+
+.hljs-comment {
+    color: #697070;
+}
+
+.hljs-tag,
+.hljs-punctuation {
+    color: #444a;
+}
+
+.hljs-tag .hljs-name,
+.hljs-tag .hljs-attr {
+    color: #444;
+}
+
+
+.hljs-keyword,
+.hljs-attribute,
+.hljs-selector-tag,
+.hljs-meta .hljs-keyword,
+
+.hljs-doctag,
+.hljs-name {
+    font-weight: bold;
+}
+
+
+/* User color: hue: 0 */
+
+.hljs-type,
+.hljs-string,
+.hljs-number,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-quote,
+.hljs-template-tag,
+.hljs-deletion {
+    color: #880000;
+}
+
+.hljs-title,
+.hljs-section {
+    color: #880000;
+    font-weight: bold;
+}
+
+.hljs-regexp,
+.hljs-symbol,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-link,
+.hljs-selector-attr,
+.hljs-operator,
+.hljs-selector-pseudo {
+    color: #ab5656;
+}
+
+/* Language color: hue: 90; */
+
+.hljs-literal {
+    color: #695;
+}
+
+.hljs-built_in,
+.hljs-bullet,
+.hljs-code,
+.hljs-addition {
+    color: #397300;
+}
+
+
+/* Meta color: hue: 200 */
+
+.hljs-meta {
+    color: #1f7199;
+}
+
+.hljs-meta .hljs-string {
+    color: #38a;
+}
+
+
+/* Misc effects */
+
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-strong {
+    font-weight: bold;
+}
